@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.logo {
+  background-color: white !important;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+/* Menu Fixo */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #b1885a;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  background-color: #577845;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1ede5;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #f1ede5;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #b1885a;
+}
+
+/* Sessões */
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 50px;
+}
+
+.section-content {
+  width: 80%;
+  max-width: 1400px;
+}
+
+#principais-produtos {
+  background-color: #f1ede5;
+}
+
+#como-comprar {
+  background-color: #3e393b;
+}
+
+#torne-se-doador {
+  background-color: #f1ede5;
+}
+
+#quem-somos {
+  background-color: #3e393b;
+}
+
+/* Principais Produtos */
+.produtos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+  height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #577845;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.produto-info h1 {
+  color: #b1885a;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.produto-info p {
+  color: #3e393b;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+
+}
+
+.info-text p {
+  text-align: justify;
+}
+
+.info-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover ;
+}
+
+/* Como Comprar e Quem Somos */
+.info-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.info-image {
+  width: 100%;
+  height: 400px;
+  background-color: #577845;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f1ede5;
+  font-size: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info-text h2 {
+  color: #b1885a;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.info-text h3 {
+  color: #f1ede5;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.info-text p {
+  color: #f1ede5;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+/* Formulário Doador */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  color: #373c7c;
+  font-size: 42px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #3e393b;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 2px solid #b1885a;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  background-color: white;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #577845;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.map-container {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2px solid #b1885a;
+}
+
+button[type="submit"] {
+  background-color: #577845;
+  color: #f1ede5;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #b1885a;
+}
+
+/* Responsividade */
+@media (max-width: 968px) {
+  .section-content {
+    width: 100%;
+  }
+
+  .produtos-container,
+  .info-container {
+    grid-template-columns: 1fr;
+  }
+
+  .swiper {
+    height: 400px;
+  }
+
+  .produto-info h1,
+  .info-text h2,
+  .form-container h2 {
+    font-size: 32px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .info-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  section {
+    padding: 120px 15px 30px;
+  }
+}
+
+/* Swiper customization */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f7f7f7 !important;
+  
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #f7f7f7 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #b1885a;
+}

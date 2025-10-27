@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecobó - Produtos Sustentáveis</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
+    <link rel="icon" type="image/png" href="./img/logo.png">
+</head>
+<body>
+    <!-- Menu Fixo -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <ul class="nav-links">
+                <li><a onclick="scrollToSection('principais-produtos')">Principais Produtos</a></li>
+                <li><a onclick="scrollToSection('como-comprar')">Como Comprar</a></li>
+                <li><a onclick="scrollToSection('torne-se-doador')">Torne-se um Doador</a></li>
+                <li><a onclick="scrollToSection('quem-somos')">Quem Somos Nós</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sessão 1: Principais Produtos -->
+    <section id="principais-produtos">
+        <div class="section-content">
+            <div class="produtos-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/produto2.jpeg" alt="Produto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/produto.jpeg" alt="Produto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/produto3.jpeg" alt="Produto 3">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="produto-info">
+                    <h1>Produtos Sustentáveis de Qualidade</h1>
+                    <p>O Cobogó Écobo é um projeto que propõe a criação de elementos vazados sustentáveis a partir do reaproveitamento de resíduos de construção civil, como pedaços de tijolos, restos de concreto, cerâmica e argamassa. A proposta une design, funcionalidade e responsabilidade ambiental, transformando materiais descartados em um novo produto construtivo estético e ecológico. Além de seu valor sustentável, o Cobogó Écobo desempenha um papel importante no conforto térmico e lumínico das edificações, permitindo ventilação cruzada e entrada controlada de luz natural. Dessa forma, contribui para a eficiência energética dos ambientes, diminuindo a necessidade de iluminação e climatização artificial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão 2: Como Comprar -->
+    <section id="como-comprar">
+        <div class="section-content">
+            <div class="info-container">
+                <div class="info-image">
+                    <img src="./img/images.jpeg" alt="Produto 1">
+                </div>
+                <div class="info-text">
+                    <h2>Como comprar</h2>
+                    <p>O ECOBÓ é um cobogó sustentável desenvolvido por alunos do Centro Universitário do Rio Grande do Norte, na disciplina de Projeto de Extensão, tendo como gestores alunos do oitavo período de Arquitetura e Urbanismo e como colaboradores gerais, alunos do 2º, 4º e 6º período do mesmo curso. Além de estar disponível para venda em lojas locais e em feiras de sustentabilidade, a empresa também oferece o produto por meio do e-commerce, através de um site próprio, facilitando o acesso dos consumidores e, consequentemente, ampliando o alcance das vendas. O produto é comercializado no atacado, atendendo estabelecimentos e revendedores que desejam adotar e promover alternativas sustentáveis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão 3: Torne-se um Doador -->
+    <section id="torne-se-doador">
+        <div class="section-content">
+            <div class="form-container">
+                <h2>Torne-se um Doador</h2>
+                <form id="doadorForm">
+                    <div class="form-group">
+                        <label for="nomeEmpresa">Nome da Empresa *</label>
+                        <input type="text" id="nomeEmpresa" name="nomeEmpresa" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cnpj">CNPJ *</label>
+                        <input type="text" id="cnpj" name="cnpj" placeholder="00.000.000/0000-00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contato">Contato do Responsável *</label>
+                        <input type="text" id="contato" name="contato" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="observacao">Observação</label>
+                        <textarea id="observacao" name="observacao" placeholder="Conte-nos mais sobre sua empresa e interesse em ser um doador..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Localização da Empresa</label>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0977!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzgnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1234567890!5m2!1spt-BR!2sbr" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    <button type="submit">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sessão 4: Quem Somos Nós -->
+    <section id="quem-somos">
+        <div class="section-content">
+            <div class="info-container">
+                <div class="info-image">
+                    <img src="./img/fachada3.jpeg" alt="Produto 1">
+                </div>
+                <div class="info-text">
+                    <h2>Quem somos</h2>
+                    <p>O ECOBÓ surgiu a partir de um encontro de extensão no curso de Arquitetura e Urbanismo da UNI-RN, onde um grupo de estudantes percebeu o potencial de transformar resíduos da construção civil em elementos arquitetônicos sustentáveis. Dessa ideia nasceu um projeto que une inovação, pesquisa e consciência ambiental.</p>
+                    <p>&nbsp;</p>
+
+                    <p>Fundado em 15 de agosto de 2025, o ECOBÓ tem como objetivo reduzir o impacto ambiental da construção civil por meio da reutilização de materiais descartados, criando produtos como cobogós sustentáveis.</p>
+                    <p>&nbsp;</p>
+                    <p>Nosso diferencial está na integração entre pesquisa acadêmica e prática criativa, resultando em soluções que valorizam a estética e o meio ambiente. Formada por uma equipe multidisciplinar, nossa iniciativa reflete o compromisso coletivo de construir uma arquitetura mais responsável, eficiente e humana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
